@@ -108,7 +108,7 @@ public class MyHashMap {
         System.out.println(hashMap.size());
         hashMap.remove("two");
         System.out.println(hashMap.size());
-        
+
         hashMap.clear();
         System.out.println(hashMap.size());
 

@@ -34,6 +34,9 @@ public class MyArrayList {
     }
 
     public Object get(int index) {
+        if(index < 0 || index > size){
+            return (Object) "you entered an invalid index";
+        }
         return (Object) values[index];
     }
 
@@ -48,6 +51,7 @@ public class MyArrayList {
         arrayList.add("ggg");
 
         System.out.println(arrayList.get(5));
+        System.out.println(arrayList.get(-1));
 
         System.out.println(arrayList.size());
 

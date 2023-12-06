@@ -63,6 +63,9 @@ public class MyLinkedList {
     }
 
     public Object get(int index){
+        if(index < 0 || index > size) {
+            return (Object) "you entered an invalid index";
+        }
         Node value = head;
         for(int i = 0; i < index; i++){
             value = value.next;
@@ -78,6 +81,8 @@ public class MyLinkedList {
         linkedList.add("dd");
 
         System.out.println(linkedList.get(2));
+        System.out.println(linkedList.get(10));
+
 
         linkedList.remove(2);
         System.out.println(linkedList.get(2));
